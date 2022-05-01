@@ -20,6 +20,7 @@ return new class extends Migration {
             });
         }
 
+        // commented
         /* Media::query()
             ->where(function ($query) {
                 $query->whereNull('generated_conversions')
