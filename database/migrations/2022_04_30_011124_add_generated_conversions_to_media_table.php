@@ -20,7 +20,7 @@ return new class extends Migration {
             });
         }
 
-        Media::query()
+        /* Media::query()
             ->where(function ($query) {
                 $query->whereNull('generated_conversions')
                     ->orWhere('generated_conversions', '')
@@ -31,7 +31,7 @@ return new class extends Migration {
                 'generated_conversions' => DB::raw('custom_properties->"$.generated_conversions"'),
                 // OPTIONAL: Remove the generated conversions from the custom_properties field as well:
                 // 'custom_properties'     => DB::raw("JSON_REMOVE(custom_properties, '$.generated_conversions')")
-            ]);
+            ]); */
     }
 
     /**
